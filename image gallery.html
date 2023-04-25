@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 갤러리</title>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .gallery img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>이미지 갤러리</h1>
+    <div class="gallery">
+           
+      <img src="https://blog.kakaocdn.net/dn/uqJpZ/btqyenBIIXx/mh1Cc5F023UGpfQTFBdqV0/img.jpg" alt="애플" />    
+      <img src="data:image/png;base64,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" alt="구글" />  
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAMAAAA4Y0Y/AAAAbFBMVEVIZ6r///9FZan5+vw1WqQ6XaZBYqg9X6cyWKMtVaLw8ffq7fTl6PLK0eNnfrYpU6FddrK/x95XcrCYpsuHmMORoMjX3OrQ1ubFzOG3wNrd4e2os9JRba2hrc+Bk8Gxu9d2irwcTJ4ORpxuhLlApouHAAADVklEQVRYhe2V2bKjOAyGwXsMwSwBwpKQdN7/HVu/WPp0T5LD1HTV3EQXgLGsz5IlOYo+8pGPfOQ/ivg3unuVv1fUZhx3GnPK7FNUpPgeLKKjjOP4tMegSb1M1R5s76W3b1Wcj+O9XEuKqduheCBXvH6nYer4f+HagmxV97Dr3P4iVx/JVr4zSf8e1x7ALbUlslFIV2Mt+y6sck7z5/Y1c0lPr+Exm9KyRMHSxiVj9plPZTelZKubuky4uk2bOlymabCRcI+uSfszHbuNhpa+rk7M3B9Vkx5P7LUxF0zVjm27jJY0XeY2rj1NU3f9J1hk8SqZ7vld0Mu7yDTrf7UkXtxb5vYtj1ryxp6WKZ+Ty+q8jI5q4YoRwycN5AvXFMsHrUicWrE+XPmFYjsrG/+SyZrbNpAiUsU2OquZ65pXhZIXXQInu05gwZBdAUgODKuyrKoOOIdHCAO9Ruamt0fHO3WYKrIbAjXpHP/qrEYTygK4Dlaap2kobEB0RuUQsnMQ9gHuHXuvlRDGlgjc3dqArSuOmxEBsb4hin0QxnBcsLFKCT6W6Q4u4PH4olSWOrJYVlNIHHPhAieiwD6aYRguZGTgyQPlUwUI3KEUjBxrH2eIwEbbH6SdIirVq2b5lXv6jXvggPw6w4WL+uUmVyFEF7LLyWAQAraIjYILb5PwAvuG6zaunCW+bNzqK5fTx4KLa21cuSksX1/1wYXLHgyabifm4mdGS4RBuhROkBjDdRSTCwohvKIYzrSLQLkoHX7dqO1gowWfL7SleX++XFGyDJwxSYA/iTgEk2lEzCitDzYTzO3ugctvVJJT/Y5QtVwCqQ4aSX7ifGYrxYtrc+3PCvrxfCcmzkh++7i/T/hqi2MaN0v9Stai0cBLWJXaXcJL+LHUb+AafB7plbu2EJ8y97HmUrS1EModcOd2RbGhvR7XmYpOqJTxNrX0KxyS1E8jbQvvJe4jkwPQR633vYrMWMAr2ZZCVRwKmU7CeO+nDMO2hBuqxrdsHrh6jOiwxBfUGF1CVmykBzI+PC8lq/V8YQkV5aMSNIai0HbMS4PToUeel8LRbUG6xqgxF2p2gqbKch2QqTEfZ2t6tgrj39/sf3Zwsf0Q4re5r4M/Zr6FfOQjH/nIfvkJaaIsEa/B1HwAAAAASUVORK5CYII=" alt="페이스북" />    
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAABL1BMVEX////19fX+/v7///06qzb//f/8//v///s9qTgxqS1is146qzrT69P5+fr7//n8//3t7PHf3+M1oDT589Do5uPm5erY197OzdXn5ufb18/RxJ3Wy4/h1aDl3rfg3Mbz8uvSwWTp2or8773dy5Ps4rH07L/p48L29OdgqV4ioR6FvYNRoU42mjUqoSwpliTE5cKkxaWfzp7x++318965qF3byXbx56pRrU3d7dt0uXHo++ilzKLq3px+vnySyZOx2rGTv5HTv3bCs1/KvIbBuMm/sYh/bkmqoZHAupu6qWktMTXfmjDSt5hlvmCjl2jIxcBQUFg6NyhRTUhDR0gwPklhWUXZmkaqmFqZjGh8dW4lKkAAAA+VcUbUrmeoilvGjkbLhy/r0KPXpnjElDjDmVdl5liXAAAEFUlEQVRoge3b63PaRhAA8NXd6XGSkEDY4AeOgBoXYQ6KXCxwALVgJ3acJmniOukjTZv2//8buifSGWc6DswUSD7cftEDRr/bvdWhYUYAKlSsK3La5iJ3x9UIkM0EEO2uu8HafuSSjbFEucpVrnKVq1zlKle5ylWucpWrXOUqV7nKXYG7rpEsdNf0H95CN0+AbtL9d3c7T801wPe7+flBvpDPwerj/joX8tlmu1QqrGGO73d35nmScrlU2Fl5yve6lBS0HKE+7O7tVw4ehNhd+KmvG6ZpAp72DMOgBHSdGtSjumf6nmcSQqjhU594ACb2BfV0PATDlxKhy7gESloup9ODaq3+1WHj6Gu8EoDuNYMgaoHvHQfttovfM5siCDpd+KYTBMcxgUEnEB23JfCsEJ0WyD0RtO1enF1goYsdpeUpOfm2f1o/OGo0Dj1igqEbNrd41AUv4Yx3wYBBwBnjQzgTjHMcyMOI8SZtyZMYQ2hx/KLcP47vLkKfcHMI6+bJXm3UOCmejg6AUkoMmzkOa8dmwhhzwYcJCoyLGMbM4RMAmztRigeMJ7Z9/B3IEdi2xVjUW2p+MXa0PLYy3RsdNhqnte9PEAZ0pTM25i54AWOJw/lDcAXuwVkHQRwEJph6Xmyg60Rd2sOUx+Av5+YKea28rXuz2mhU609nCH9wmUhtnrldwUTPRgtM+cmgi2XGrDF5lgyHtosjYFHXm+DstJacXwJb5dL2eXnnot+vVquPZjXsLZxfhyfoWHN3yLk1wDmMXEgFj1IsqxiA1CxMGSsu6+xYkdSXdAHCx8/L5fPzy+l0evXoyez66Qe322ZyVtEdYDfZcSoczCbGVvvBwh6jWb6cYZ+7mYuyk6Qf/bZ90tWePUO4/OLHly9f3fx0e3uKNyTWl7tp5DBLuj2ZTZJgaoGHLeYwZmFeMl8uutk1xrKdMfkhEHO5fsZ4/Pr1m59/+fXJzc2r367f1g9NeR+hm13NCVxoZ+XkjoXNA24g9xNcM+Tdg/2cJGPZV6yXMEdMYGnXD6+q02rt4s3v7/64/bPYeJDVmeFcxrLSfOBGOL3jyUQOxvbQsCyeAq5QY5k61trORpBir8u5XtY1YeuqWu2/f//ubaVRLF5qOvGaQgjXwD7GZcgdYys18e7oRrg2ueDKzRmusXKVyqIJrQ4XKfSE4J0BXdLFZVa7/Ov674tKvV48utQors9xHJ7lsGRxGIdGiEchMXQSY/hUlxuQDwp4Xu6HMYT4PY/S+cGy8ytj9+lsf79S2ds1794H/zcWur4JuS0MWaMVPncszjf7/cKl2Vzp485C1/QpyR7t6Eof8L7U53blKle5ylWucpWrXOUqV7nKVa5ylatc5X7J7sbY/7y/8Fne1/hc76eoULHa+Adgm21mGSTZQgAAAABJRU5ErkJggg==" alt="네이버" />
+    </div>
+  </body>
+</html>
